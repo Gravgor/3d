@@ -1,10 +1,10 @@
 addEvent("textTworzClient",true)
-addEventHandler("textTworzClient",getRootElement(),function(textyzSerwera)
-    tworzTexta = textyzSerwera
+addEventHandler("textTworzClient",getRootElement(),function(servertext)
+    textClient = servertext
 end)
 
 addEventHandler("onClientRender",root, function()
-    for id, v in pairs(tworzTexta) do 
+    for id, v in pairs(textClient) do 
         local x,y,z = getElementPosition(localPlayer)
           if getDistanceBetweenPoints3D(v[2], v[3], v[4], x,y,z) <= v[8] then 
             local screenx, screeny = getScreenFromWorldPosition(v[2], v[3], v[4]) 
