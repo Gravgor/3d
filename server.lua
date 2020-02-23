@@ -21,8 +21,6 @@ function create3DText(player, scale, font, color, distance,...)
               id = id + 1
                dtext[id] = {text,x,y,z,scale,font,color,distance}
                dTextTworzClient()
-               print("siema")
-               print(id)
             end 
         end
 addCommandHandler("tworz",create3DText)
