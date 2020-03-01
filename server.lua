@@ -23,7 +23,7 @@ function create3DText(player, scale, font, color, distance,...)
                dTextTworzClient()
             end 
         end
-addCommandHandler("tworz",create3DText)
+
 
 
             function dTextTworzClient()
